@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/identidade.css" />
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <header>
+        <div class="containerMenu">
+            <div class="iconeEsquerda">
+                <img src="img/image 4.png">
+                <p>MyCheckList</p>
+            </div>
+            <div class="containerDireita">
+                <div class="acessar">
+                    <img src="img/image 2.png">
+                    <p>Acessar</p>
+                </div>
+                <div class="entrarCadastrar">
+                    <img src="img/image 2.png">
+                    <a href="cadastro.html"><p>Entrar/Cadastrar</p></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Formulário começa aqui -->
+    <form id="loginForm">
+        <div class="containerCadastro">
+            <div class="CadastroTudo">
+                <div class="containerTituloELinha">
+                    <p>LOGIN</p>
+                    <div class="linhaPreta"></div>
+                </div>
+                <div class="todosInput">
+                    <div class="inputGmail">
+                        <input type="text" id="loginEmail" placeholder="Insira seu Email">
+                    </div>
+                    <div class="inputSenha">
+                        <input type="password" id="loginSenha" placeholder="Insira sua senha">
+                    </div>
+                    <!-- Div para exibir mensagens de erro -->
+                    <div id="erro" style="color: red;"></div>
+                    <div class="botaoCadastrar">
+                        <button type="submit" id="botaoLogin">ENTRAR</button>
+                    </div>
+                    <div class="sConta">
+                        <p>Não tem cadastro? Então </p>
+                        <a href="cadastro.html"> <p class="amarela">Cadastre-se!</p> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <footer>
+        <div class="containerFooter">
+            <div class="footerSite">
+                <p>© 2024 Desenvolvido Fatec</p>
+                <p>Campinas, São Paulo</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="js/login.js"> </script>
+</html>
