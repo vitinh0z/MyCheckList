@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/identidade.css" />
     <link rel="stylesheet" type="text/css" href="css/tarefa.css">
+    <link rel="script" href="js/tarefas.js">
     <title>Agendamento</title>
 </head>
 <body>
@@ -16,48 +17,52 @@
     <div class="containerTarefas">
         <div class="tarefas">
             <p>Escreva aqui sua tarefa:</p>
-            <textarea rows="4" cols="50"></textarea>
+            <textarea id="tarefaText" rows="4" cols="50"></textarea>
         </div>
         <div class="etiqueta">
             <p>Etiqueta:</p>
             <div class="inputs">
-                <input type="radio" name="opcao" value="opcao1">
-                <p>Urgente</p>
+                <input type="radio" name="opcao" value="urgente" id="urgente">
+                <label for="urgente">Urgente</label>
             </div>
             <div class="inputs">
-                <input type="radio" name="opcao" value="opcao2">
-                <p>Moderada</p>
+                <input type="radio" name="opcao" value="moderada" id="moderada">
+                <label for="moderada">Moderada</label>
             </div>
             <div class="inputs">
-                <input type="radio" name="opcao" value="opcao3">
-                <p>Padrão</p>
+                <input type="radio" name="opcao" value="padrao" id="padrao">
+                <label for="padrao">Padrão</label>
             </div>
         </div>
         <div class="validade">
             <p>Data de validade:</p>
-            <input type="date">
+            <input type="date" id="dataValidade">
             <div class="botaoEnviar">
-                <button>Enviar</button>
+                <button onclick="enviarTarefa()">Enviar</button>
             </div>
         </div>
     </div>
-
+    
     <div class="containerTarefasDentro">
         <div class="tarefasDentro">
             <div class="tareUrgente">
                 <p>Urgente:</p>
-                <textarea rows="4" cols="50"></textarea>
+                <ul id="urgenteList"></ul>
             </div>
             <div class="tarefaModerada">
                 <p>Moderada:</p>
-                <textarea rows="4" cols="50"></textarea>
+                <ul id="moderadaList"></ul>
             </div>
             <div class="tarefaPadrao">
                 <p>Padrão:</p>
-                <textarea rows="4" cols="50"></textarea>
+                <ul id="padraoList"></ul>
             </div>
         </div>
     </div>
+    
+    
+
+    <script src="js/tarefas.js"></script>
     
 </body>
 </html>
