@@ -16,4 +16,4 @@ O desenvolvimento do MyCheckList faz parte de um trabalho prático da disciplina
 ## Como Executar o Projeto
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-repositorio/MyCheckList.git
+   https://github.com/vitinh0z/MyCheckList 
