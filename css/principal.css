@@ -1,0 +1,122 @@
+/* Estilização dos componentes da página */
+
+.containerCorpoPag{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding: 65px 0px 150px 0px;
+}
+
+.descricoes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left:100px ;
+}
+
+.containerDescricao{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start; 
+}
+
+.tituloPrincipal p{
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.descricaoPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.descricaoPrincipal p{
+    color: black;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.botaoComecar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.botaoComecar button{
+    color: black;
+    background-color: #9B59B6;
+    border: 5px solid;
+    border-radius: 10px;
+    width: 447px;
+    height: 88px;
+    font-size: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botaoComecar button:hover{
+    transform: scale(1.1);
+}
+
+.imgPc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.imgPc img{
+    width: 600px;
+}
+
+@media screen and (max-width: 1072px) {
+    .containerCorpoPag{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .descricoes{
+        padding-left:0px ;
+    }
+}
+
+@media screen and (max-width: 835px){
+    .tituloPrincipal p{
+        font-size: 30px;
+    }
+
+    .botaoComecar button{
+        border: 3px solid;
+        border-radius: 8px;
+        width: 347px;
+        height: 68px;
+        font-size: 30px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .descricaoPrincipal p{
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .imgPc img{
+        width: 400px;
+    }
+}

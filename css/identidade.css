@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: black;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; 
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/* Estilos do menu principal */
+.containerMenu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #9B59B6;
+    padding: 10px 30px;
+    gap: 10px;
+}
+
+.iconeEsquerda {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.iconeEsquerda img:hover{
+    transform: scale(1.1);
+}
+
+.iconeEsquerda img {
+    width: 150px;
+    height: 122px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.iconeEsquerda p {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.containerDireita {
+    display: flex;
+    gap: 30px; 
+    align-items: center;
+}
+
+.acessar, .entrarCadastrar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.acessar img, .entrarCadastrar img {
+    width: 30px;
+    height: 30px;
+}
+
+.acessar p, .entrarCadastrar p {
+    font-size: 25px;
+    font-weight: 700;
+    position: relative; 
+    cursor: pointer; 
+    display: inline-block;
+}
+
+.acessar p::after, .entrarCadastrar p::after {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 2px; 
+    background-color: black; 
+    bottom: -5px; 
+    left: 0; 
+    transition: width 0.4s ease-in-out; 
+}
+
+.acessar p:hover::after, .entrarCadastrar p:hover::after {
+    width: 100%; 
+}
+
+.acessar p::after, .entrarCadastrar p::after {
+    width: 0; 
+}
+
+@media screen and (max-width: 962px) {
+    .containerMenu {
+        align-items: center;
+        justify-content: center; 
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .iconeEsquerda img {
+        width: 100px;
+        height: 90px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .iconeEsquerda p {
+        font-size: 30px;
+    }
+
+    .acessar p, .entrarCadastrar p {
+        font-size: 18px;
+    }
+}
+/* Fim menu */
+
+/* Footer */
+.containerFooter{
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.footerSite{
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: #9B59B6;
+padding: 10px;
+}
+
+.footerSite p{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Fim do Footer */
+
