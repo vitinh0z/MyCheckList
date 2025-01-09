@@ -11,7 +11,6 @@ O desenvolvimento do MyCheckList faz parte de um trabalho prático da disciplina
 - Interface amigável e fácil de usar
 
 ## Tecnologias Utilizadas
-- [Linguagem de Programação] JavaScript 
-- [Outras tecnologias, bibliotecas, ou frameworks usados]
+-  JavaScript
 
 
